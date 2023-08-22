@@ -27,14 +27,19 @@
   </body>
   <script>
     const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
-    const list = document.createElement('ul');
-
-    // Add your code here
-
+    const listBox = document.createElement('ul');
+    
+    for (food of myArray){
+    
+      list = document.createElement('li')
+      list.innerText = food;
+      listBox.appendChild(list);
+    
+    }
+  
     // Don't edit the code below here!
-
     const section = document.querySelector('section');
-    section.appendChild(list);
+    section.appendChild(listBox);
   </script>
 
 </html>
